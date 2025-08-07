@@ -5,6 +5,7 @@ import About from "./components/About.jsx";
 import Workprogress from "./components/Workprogress.jsx";
 import Portfolia from "./components/Portfolia.jsx";
 import Partnerhand from "./components/Partnerhand.jsx";
+import Happyclient from "./components/Happyclient.jsx";
 
 const App = () => {
     return (
@@ -15,6 +16,7 @@ const App = () => {
             <Workprogress/>
             <Portfolia />
             <Partnerhand />
+            <Happyclient />
 
         </div>
     )

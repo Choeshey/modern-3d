@@ -53,12 +53,3 @@ const navItems = [
 ];
 
 export { navItems };
-
-const socialLinks = [
-    { name: 'GitHub', href: 'https://github.com/sahil-kumar-12' },
-    { name: 'LinkedIn', href: 'https://www.linkedin.com/in/sahil-kumar-12/' },
-    { name: 'Twitter', href: 'https://twitter.com/sahil_kumar_12' },
-]
-
-export { socialLinks };
-
