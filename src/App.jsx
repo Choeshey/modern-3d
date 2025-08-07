@@ -6,6 +6,8 @@ import Workprogress from "./components/Workprogress.jsx";
 import Portfolia from "./components/Portfolia.jsx";
 import Partnerhand from "./components/Partnerhand.jsx";
 import Happyclient from "./components/Happyclient.jsx";
+import Testimonial from "./components/Testimonial.jsx";
+import Cta from "./components/Cta.jsx";
 
 const App = () => {
     return (
@@ -17,6 +19,8 @@ const App = () => {
             <Portfolia />
             <Partnerhand />
             <Happyclient />
+            <Testimonial />
+            <Cta/>
 
         </div>
     )
