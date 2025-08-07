@@ -1,15 +1,9 @@
 import React from 'react';
 import { FaSmile, FaCheckCircle } from 'react-icons/fa';
+import { companyLogos } from '../constants/index.js';
 
 const Happyclient = () => {
-    const companyLogos = [
-        { name: 'Google', logo: 'https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png' },
-        { name: 'Microsoft', logo: 'https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg' },
-        { name: 'Amazon', logo: 'https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg' },
-        { name: 'Netflix', logo: 'https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg' },
-        { name: 'Spotify', logo: 'https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg' },
-        { name: 'Airbnb', logo: 'https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_B%C3%A9lo.svg' },
-    ];
+
 
     return (
         <section className="py-20 bg-white">
@@ -43,7 +37,7 @@ const Happyclient = () => {
                                     <img
                                         src={company.logo}
                                         alt={company.name}
-                                        className="h-12 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                                        className="h-8 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
                                     />
                                 </div>
                             ))}

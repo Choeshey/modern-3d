@@ -64,6 +64,14 @@ body {
     padding-right: var(--spacing-4);
 }
 
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+.marquee-container {
+    animation: marquee 20s linear infinite;
+}
+
 @media (min-width: 640px) {
     .container {
         max-width: 640px;
