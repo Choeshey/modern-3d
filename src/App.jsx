@@ -8,6 +8,7 @@ import Partnerhand from "./components/Partnerhand.jsx";
 import Happyclient from "./components/Happyclient.jsx";
 import Testimonial from "./components/Testimonial.jsx";
 import Cta from "./components/Cta.jsx";
+import Footer from "./components/Footer.jsx";
 
 const App = () => {
     return (
@@ -21,6 +22,7 @@ const App = () => {
             <Happyclient />
             <Testimonial />
             <Cta/>
+            <Footer/>
 
         </div>
     )
