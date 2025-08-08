@@ -12,11 +12,12 @@ const Cta = () => {
     };
 
     return (
-        <section className="py-20  bg-gradient-to-r bg-white">
+        <section className="py-20  bg-gradient-to-r bg-[(var(--surface))](from-purple-600 to-purple-500) dark:bg-[(var(--background))](from-purple-700 to-purple-600) text-white)]">
             <div className="container mx-auto px-6">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 text-purple-100">
                     {/* Left side - Contact Info */}
-                    <div className="bg-gradient-to-t from-gray-100 to-gray-50 p-12 rounded-lg shadow-lg">
+                    <div className="bg-[var(--surface)] dark:
+                     from-gray-100 to-gray-50 text-gray-600 p-12 rounded-lg shadow-lg">
                         <h2 className="text-3xl font-bold text-gray-900 mb-8">Get In Touch</h2>
                         <p className="text-gray-600 mb-8">
                             Have a project in mind or want to discuss potential opportunities?
@@ -42,8 +43,8 @@ const Cta = () => {
                     </div>
 
                     {/* Right Column - Contact Form */}
-                    <div className="p-12">
-                        <h3 className="text-2xl font-bold text-gray-900 mb-8">Send Us a Message</h3>
+                    <div className="p-12 text-gray-600">
+                        <h3 className="text-2xl font-bold  mb-8">Send Us a Message</h3>
                         <form className="space-y-6">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div>
@@ -96,7 +97,7 @@ const Cta = () => {
 
                             <button
                                 type="submit"
-                                className="w-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-semibold py-3 px-6 rounded-lg hover:opacity-90 transition-opacity duration-300"
+                                className="w-full bg-gradient-to-r from-purple-600 to-indigo-600 !text-white font-semibold py-3 px-6 rounded-lg hover:opacity-90 transition-opacity duration-300"
                             >
                                 Send Message
                             </button>

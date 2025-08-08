@@ -6,7 +6,7 @@ const Happyclient = () => {
 
 
     return (
-        <section className="py-20 bg-white">
+        <section className="py-20 bg-[var(--surface)] dark:bg-[var(--background)]">
             <div className="container mx-auto px-6">
                 {/* Header and Counter */}
                 <div className="text-center mb-16">
@@ -21,7 +21,7 @@ const Happyclient = () => {
                     </p>
 
                     {/* Works Counter */}
-                    <div className="inline-flex items-center bg-purple-50 px-6 py-3 rounded-full">
+                    <div className="inline-flex items-center bg-[var(--surface)] dark: px-6 py-3 rounded-full">
                         <FaCheckCircle className="text-purple-600 mr-2" />
                         <span className="text-xl font-semibold text-gray-800">100+ Works Completed</span>
                     </div>

@@ -5,7 +5,7 @@ import { projects } from '../constants/index.js';
 const Portfolia = () => {
 
     return (
-        <section className="py-20 bg-white">
+        <section className="py-20 bg-[var(--surface)] dark:bg-[var(--background)]">
             <div className="container mx-auto px-6">
                 {/* Header */}
                 <div className="text-center mb-16">
@@ -22,7 +22,7 @@ const Portfolia = () => {
                     {projects.map((project) => (
                         <div
                             key={project.id}
-                            className="group bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100"
+                            className="group bg-[var(--surface)] dark:bg-[var(--background)] rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 border border-[var(--surface)] dark:border-[var(--background)]"
                         >
                             <div className="h-48 overflow-hidden">
                                 <img
@@ -39,7 +39,7 @@ const Portfolia = () => {
                                     {project.tags.map((tag, index) => (
                                         <span
                                             key={index}
-                                            className="px-3 py-1 bg-purple-50 text-purple-600 text-xs font-medium rounded-full"
+                                            className="px-3 py-1 bg-[var(--surface)] dark:bg-[var(--background)] text-purple-600 text-xs font-medium rounded-full"
                                         >
                                             {tag}
                                         </span>

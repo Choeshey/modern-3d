@@ -39,7 +39,7 @@ const Testimonial = () => {
     };
 
     return (
-        <section className="py-20 bg-gray-50">
+        <section className="py-20 bg-[var(--surface)] dark:bg-[var(--background)]">
             <div className="container mx-auto px-6">
                 {/* Header */}
                 <div className="text-center mb-16">
@@ -56,7 +56,7 @@ const Testimonial = () => {
                     {testimonials.map((testimonial) => (
                         <div
                             key={testimonial.id}
-                            className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+                            className="bg-[var(--surface)] dark:bg-[var(--background)] p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                         >
                             <div className="mb-6 text-purple-500">
                                 <FaQuoteLeft className="text-4xl opacity-20" />
@@ -91,7 +91,7 @@ const Testimonial = () => {
                         { number: '50+', label: 'Happy Clients' },
                         { number: '98%', label: 'Success Rate' }
                     ].map((stat, index) => (
-                        <div key={index} className="p-6 bg-white rounded-xl shadow-md">
+                        <div key={index} className="p-6 bg-[var(--surface)] dark:bg-[var(--background)] rounded-xl shadow-md">
                             <div className="text-3xl font-bold text-purple-600 mb-2">{stat.number}</div>
                             <div className="text-gray-600">{stat.label}</div>
                         </div>

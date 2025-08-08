@@ -30,7 +30,7 @@ const Workprogress = () => {
     ];
 
     return (
-        <section className="py-20 bg-gray-50">
+        <section className="py-20 bg-[var(--surface)] dark:bg-[var(--background)]">
             <div className="container mx-auto px-6">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     {/* Left Column - Work Progress */}
@@ -64,9 +64,9 @@ const Workprogress = () => {
                         {skills.map((skill, index) => (
                             <div
                                 key={index}
-                                className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-100"
+                                className="bg-[var(--surface)] dark:bg-[var(--background)] p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border border-[var(--surface)] dark:border-[var(--background)]"
                             >
-                                <div className="w-16 h-16 bg-purple-50 rounded-lg flex items-center justify-center mb-4">
+                                <div className="w-16 h-16 bg-[var(--surface)] dark:bg-[var(--background)] rounded-lg flex items-center justify-center mb-4">
                                     {skill.icon}
                                 </div>
                                 <h3 className="text-xl font-semibold text-gray-900 mb-2">{skill.title}</h3>

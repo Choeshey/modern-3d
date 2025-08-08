@@ -1,16 +1,17 @@
 @import "tailwindcss";
 
 :root {
-    /* Color Palette */
-    --primary: #0e7490;       /* Cyan-700 */
-    --primary-light: #06b6d4; /* Cyan-500 */
-    --secondary: #1e293b;     /* Slate-800 */
-    --accent: #7c3aed;       /* Violet-600 */
+    color-scheme: light dark;
+
+    /* Color Palette - Light Mode */
+    --primary: #7c3aed;       /* Violet-600 */
+    --primary-light: #8b5cf6; /* Violet-500 */
+    --secondary: #ffffff;     /* Slate-800 */
+    --accent: #fff;      /* Light mode accent color */
     --background: #ffffff;
     --surface: #f8fafc;      /* Slate-50 */
     --text: #0f172a;         /* Slate-900 */
-    --text-muted: #64748b;   /* Slate-500 */
-
+    --text-muted: #94a3b8; /* Your light mode text color */
     /* Typography */
     --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
     --font-mono: 'Fira Code', 'JetBrains Mono', monospace;
@@ -41,18 +42,27 @@
     --transition-slow: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Base Styles */
-html {
-    scroll-behavior: smooth;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+html.dark {
+    /* Color Palette - Dark Mode */
+    --primary: #8b5cf6;       /* Violet-500 */
+    --primary-light: #a78bfa; /* Violet-400 */
+    --secondary: #e2e8f0;     /* Slate-200 */
+    --accent: #22d3ee;       /* Cyan-400 */
+    --background: #0f172a;   /* Slate-900 */
+    --surface: #1e293b;      /* Slate-800 */
+    --text: #f8fafc;         /* Slate-50 */
+    --text-muted: #94a3b8;   /* Slate-400 */
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a, button {
+    color: inherit;
 }
 
 body {
     font-family: var(--font-sans);
-    color: var(--text);
     background-color: var(--background);
-    line-height: 1.5;
+    color: var(--text);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Container Styles */

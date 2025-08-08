@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
     return (
-        <section className="py-20 bg-gray-100 ">
+        <section className="py-20 bg-[var(--surface)] dark:bg-[var(--background)] ">
             <div className="container mx-auto px-6">
                 <div className="flex flex-col lg:flex-row items-center gap-12">
                     {/* Left Column - Image */}
@@ -32,13 +32,13 @@ const About = () => {
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 mt-8">
-                            <button className="px-8 py-3 bg-gradient-to-r from-purple-600 to-purple-500 text-white font-semibold rounded-lg hover:opacity-90 transition-all duration-300 transform hover:-translate-y-1 shadow-lg">
+                            <button className="px-8 py-3 bg-gradient-to-r from-purple-600 to-purple-500 !text-white font-semibold rounded-lg hover:opacity-90 transition-all duration-300 transform hover:-translate-y-1 shadow-lg">
                                 View Projects
                             </button>
                             <a
                                 href="/path-to-cv.pdf"
                                 download
-                                className="px-8 py-3 border-2 border-purple-600 text-purple-600 font-semibold rounded-lg hover:bg-purple-50 transition-all duration-300 text-center"
+                                className="px-8 py-3 border-2 border-purple-600 !text-purple-600 font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 text-center"
                             >
                                 Download CV
                             </a>
@@ -52,9 +52,9 @@ const About = () => {
                                 { title: 'Clients', value: '50+' },
                                 { title: 'Awards', value: '10+' }
                             ].map((item, index) => (
-                                <div key={index} className="bg-gray-50 p-4 rounded-lg">
+                                <div key={index} className="bg-[var(--surface)] dark:bg-[var(--background)] p-4 rounded-lg">
                                     <div className="text-2xl font-bold text-purple-600">{item.value}</div>
-                                    <div className="text-gray-600">{item.title}</div>
+                                    <div className="text-gray-500">{item.title}</div>
                                 </div>
                             ))}
                         </div>

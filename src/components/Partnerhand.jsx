@@ -2,7 +2,7 @@ import React from 'react';
 
 const Partnerhand = () => {
     return (
-        <section className="py-20 bg-gray-900">
+        <section className="py-20 bg-[var(--surface)] dark:">
             <div className="container mx-auto px-6">
                 <div className="max-w-4xl mx-auto text-center">
                     {/* Header */}
@@ -18,7 +18,7 @@ const Partnerhand = () => {
 
                     {/* CTA Button */}
                     <div className="mt-10">
-                        <button className="relative group px-8 py-4 bg-gradient-to-r from-purple-600 to-purple-500 text-white font-semibold rounded-lg overflow-hidden transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl">
+                        <button className="relative group px-8 py-4 bg-gradient-to-r from-purple-600 to-purple-500 !text-white font-semibold rounded-lg overflow-hidden transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl">
                             <span className="relative z-10 flex items-center justify-center">
                                 Join Our Partner Network
                                 <svg

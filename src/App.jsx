@@ -19,8 +19,8 @@ const App = () => {
             <Workprogress/>
             <Portfolia />
             <Partnerhand />
-            <Happyclient />
             <Testimonial />
+            <Happyclient />
             <Cta/>
             <Footer/>
 

@@ -21,7 +21,7 @@ const Hero = () => {
                             We create stunning digital experiences that drive results and leave lasting impressions.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <button className="px-8 py-4 bg-gradient-to-r from-purple-600 to-purple-500 text-white font-semibold rounded-lg hover:opacity-90 transition-all duration-300 transform hover:-translate-y-1 shadow-lg">
+                            <button className="px-8 py-4 bg-gradient-to-r from-purple-600 to-purple-500 !text-white font-semibold rounded-lg hover:opacity-90 transition-all duration-300 transform hover:-translate-y-1 hover:!text-teal-50 shadow-lg">
                                 Get Started
                             </button>
                             <button className="px-8 py-4 bg-white/10 text-gray-900 font-semibold rounded-lg hover:bg-gray-100/20 transition-all duration-300 backdrop-blur-sm  border border-gray-600/20">
@@ -30,7 +30,7 @@ const Hero = () => {
                         </div>
 
                         {/* Stats */}
-                        <div className="mt-16 grid grid-cols-1 sm:grid-cols-3  gap-6 bg-[#EDD8FF] rounded-lg">
+                        <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-3 bg-[var(--surface)] dark:bg-[var(--background)] rounded-lg">
                             {[
                                 { number: '10K+', label: 'Projects' },
                                 { number: '98%', label: 'Satisfaction' },
@@ -39,11 +39,13 @@ const Hero = () => {
                                 <div
                                     key={index}
                                     className={`
-                bg-white/5 backdrop-blur-sm p-4 rounded-lg border border-white/10
-                ${index < array.length - 2 ? 'sm:border-r-2   sm:border-gray-50' : ''}
+                bg-[var(--background)] dark:bg-[var(--surface)] 
+                backdrop-blur-sm p-4 rounded-lg 
+                border border-[var(--text-muted)]/20
+                ${index < array.length - 1 ? 'sm:border-r-2 sm:border-[var(--text)]/20' : ''}
             `}
                                 >
-                                    <div className="text-2xl font-bold text-gray-900 mb-1">{stat.number}</div>
+                                    <div className="text-2xl font-bold text-[var(--text)] mb-1">{stat.number}</div>
                                     <div className="text-gray-500 text-sm">{stat.label}</div>
                                 </div>
                             ))}
